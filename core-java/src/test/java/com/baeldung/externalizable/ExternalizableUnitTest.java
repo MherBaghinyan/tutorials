@@ -14,7 +14,6 @@ public class ExternalizableUnitTest {
     public void whenSerializing_thenUseExternalizable() throws IOException, ClassNotFoundException {
 
         Country c = new Country();
-        c.setCapital("Yerevan");
         c.setCode(374);
         c.setName("Armenia");
 
@@ -43,7 +42,6 @@ public class ExternalizableUnitTest {
     public void whenInheritanceSerialization_then_UseExternalizable() throws IOException, ClassNotFoundException {
 
         Region r = new Region();
-        r.setCapital("Yerevan");
         r.setCode(374);
         r.setName("Armenia");
         r.setClimate("Mediterranean");
